@@ -3,15 +3,51 @@ you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
 body {
+  /* test border 
+  border: 2px solid red;
+  */
+  
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
+
 }
 
 .header {
+  /* test border: 2px solid blue; */
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.left{
+  display: flex;
+  /* test border: 2px solid pink; */
+  align-items: center;
+
+}
+
+.right{
+
+  display:flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  flex-wrap: nowrap;
+}
+
+ul{
+  display:flex;
+  /* test border: 2px solid green; */
+  padding:0px;
+  align-items: center;
+}
+
+a{
+  padding: 10px;
 }
 
 .profile-image {
@@ -27,14 +63,25 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  padding: 8px;
+}
+
+.notifications{
+
+white-space: nowrap;
+
 }
 
 button {
+
   border: none;
   border-radius: 8px;
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  flex: 0;
+  padding: 10px;
+
 }
 
 a {
